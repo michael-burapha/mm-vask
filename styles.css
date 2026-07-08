@@ -414,7 +414,8 @@ button { font-family: inherit; }
   overflow: hidden;
   box-shadow: var(--shadow-lg);
 }
-.hero .hero-media img {
+.hero .hero-media img,
+.hero .hero-media video {
   width: 100%;
   height: 340px;
   object-fit: cover;
@@ -486,7 +487,8 @@ button { font-family: inherit; }
   grid-template-columns: 1fr 1fr;
   gap: var(--space-3);
 }
-.about-photos img {
+.about-photos img,
+.about-photos video {
   width: 100%;
   object-fit: cover;
   border-radius: var(--radius-lg);
@@ -495,7 +497,8 @@ button { font-family: inherit; }
   grid-column: 1 / -1;
   height: 260px;
 }
-.about-photos img:not(:first-child) { height: 160px; }
+.about-photos img:not(:first-child),
+.about-photos video { height: 160px; }
 .about h2 { font: var(--text-h1); margin: 10px 0 var(--space-4); }
 .about p { font: var(--text-body-lg); color: var(--text-secondary); margin-bottom: var(--space-3); }
 .about p.small { font: var(--text-body); margin-bottom: var(--space-4); }
